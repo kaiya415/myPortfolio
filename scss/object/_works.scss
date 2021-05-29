@@ -1,0 +1,105 @@
+.works {
+  background-image: url(/image/section4-bg.jpg);
+  .inner {
+    @include overTab {
+    width: 90%;
+    }
+    width: 70%;
+    margin: 0 auto;
+    h2 {
+      margin-bottom: 20px;
+    }
+    .work-wrapper {
+      @include overTab {
+      display: flex;
+      justify-content: center;
+      }
+      .work:nth-of-type(2) {
+        @include overTab {
+        margin-left: 10%;
+        }
+      }
+      .work {
+        @include overTab {
+        width: 40%;
+        }
+        background-color: cl(white);
+        height: auto;
+        transition: all 0.3s;
+        &:nth-of-type(2) {
+          margin-top: 20px;
+          @include overTab {
+            margin-top: 0;
+          }
+        }
+        .work-link {
+          color: cl(black);
+          text-decoration: none;
+          .work-image {
+            width: 100%;
+            img {
+              width: 100%;
+            }
+          }
+          .work-text {
+            h3 {
+              font-size: 17px;
+              @include overTab {
+              font-size: 19px;
+              }
+              text-align: center;
+              transition: all 0.3s;
+            }
+            span {
+              width: 50%;
+              @include overTab {
+              height: 2px;
+              }
+              height: 1px;
+              background-color: cl(black);
+              transition: all 0.3s;
+              display: block;
+              margin: 0 auto;
+              margin-top: 2px;
+              margin-bottom: 5px;
+            }
+            p {
+              @include overTab {
+              font-size: 16px;
+              }
+              font-size: 13px;
+              margin: 0 1em;
+            }
+            p:nth-of-type(1) {
+              @include overTab {
+              height: 150px;
+              }
+            }
+            p:nth-of-type(2) {
+              padding-top: 10px;
+              padding-bottom: 10px;
+            }
+          }
+        }
+            &:hover {
+              box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+              .work-link {
+
+                h3 {
+                  color: cl(skyblue);
+                }
+                span {
+                  width: 25%;
+                }
+              }
+            }
+
+      }
+      
+    }
+  }
+}
+// 0
+// 130
+// 1172
+// 723

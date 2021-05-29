@@ -1,0 +1,75 @@
+.footer {
+  background-image: url(/image/footer-bg.jpg);
+  padding-bottom: 10px;
+  .inner {
+    width: 90%;
+    margin: 0 auto;
+    color: cl(black);
+    text-align: center;
+    @include overTab {
+    padding-top: 50px;
+    }
+    h2 {
+      margin-bottom: 20px;
+    }
+    .copyright {
+      @include overTab {
+      font-size: 15px;
+      }
+      font-size: 10px;
+    }
+    .form-list {
+      display: flex;
+      justify-content: center;
+      li {
+        @include overTab {
+        width: 80px;
+        height: 80px;
+        margin: 20px 20px 70px 20px;
+      }
+      margin: 10px 5px 40px 5px;
+
+        .form-item {
+          text-decoration: none;
+        }
+        .form-item::before {
+          display: inline-block;
+          width: 30px;
+          height: 30px;
+          font-size: 15px;
+          @include overTab {
+          width: 80px;
+          height: 80px;
+          font-size: 45px;
+          }
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 2px;
+          background-color: cl(silver);
+          color: cl(blue);
+          transition: all 0.5s;
+        }
+        .mymail::before {
+          font-family: "Font Awesome 5 Free";
+          content: '\f0e0';
+          font-weight: 900;
+        }
+        .mytwitter::before {
+          font-family: "Font Awesome 5 Brands";
+          content: '\f099';
+        }
+        &:hover {
+          .mymail::before {
+            background-color: cl(gold);
+            color: cl(white);
+          }
+          .mytwitter::before {
+            background-color: cl(skyblue);
+            color: cl(white);
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.top {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-image: url(/image/top-image.jpg);
+  background-position: center;
+  background-size: cover;
+  .thumbnail-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    background-color: cl(white);
+    opacity: 0.8;
+  }
+  .top-thumbnail-title {
+    @include overTab {
+    font-size: 60px;
+    }
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+  }
+}

@@ -1,0 +1,63 @@
+.introduction {
+  background-image: url(/image/section1-bg.jpg);
+  .inner {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    .intro-image {
+      @include overTab {
+      width: 25%;
+      }
+      width: 30%;
+      margin: 0 auto;
+      margin-top: 20px;
+      img {
+        width: 100%;
+        border-radius: 50%;
+      }
+    }
+    h3 {
+      @include overTab {
+      font-size: 24px;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      }
+      font-size: 20px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+    .intro-text-wrapper {
+      p {
+        width: 90%;
+        margin: 0 auto;
+      }
+      p:nth-child(1) {
+        padding-top: 15px;
+      }
+      p:nth-child(n+2) {
+        padding-top: 25px;
+      }
+      p:nth-child(3) {
+        padding-bottom: 20px;
+      }
+    }
+    .education-list {
+      width: 90%;
+      margin: 0 auto;
+      text-align: left;
+      li {
+          text-indent: -4.1em;
+          padding-left: 4.1em;
+      }
+      li:nth-child(1) {
+        padding-top: 15px;
+      }
+      li:nth-child(n+2) {
+        padding-top: 20px;
+      }
+      li:nth-child(3) {
+        padding-bottom: 20px;
+      }
+    }
+  }
+}

@@ -1,0 +1,62 @@
+// COLORS
+// @inlcude cl(black);
+//--------------------------------------------------
+
+$colors: (
+	white: #fff,
+	black: #000,
+	text: #333333,
+    grey: #6E6E6E,
+  lightgrey: #F2F2F2,
+  silver: #c0c0c0,
+    red: #FF0000,
+  primary: #4D0000,
+  blue: #0000ff,
+  skyblue:#63B7E6,
+    gold: #B8860BEA,
+	baige: #FFFFDD,
+);
+
+@function cl($key) {
+	@return map-get($colors, $key);
+}
+
+// FONT
+// @inlcude  Oswald;
+//--------------------------------------------------
+
+@mixin Oswald {
+  font-family: 'Oswald', sans-serif;
+}
+
+@mixin Gothic {
+  font-family: 'Yu Gothic', 'YuGothic' , serif;
+}
+
+
+
+// RESPONSIVE
+// @include overTab
+//--------------------------------------------------
+
+@mixin overTab {
+	@media print,screen and (min-width: 768px) {
+		@content;
+	}
+}
+
+// UTILITY
+//--------------------------------------------------
+
+._sp {
+	@include overTab {
+		display: none;
+	}
+}
+
+._pc {
+	display: none;
+	@include overTab {
+		display: block;
+	}
+}
