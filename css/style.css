@@ -244,7 +244,7 @@ body {
 .top {
   padding-top: 100px;
   padding-bottom: 100px;
-  background-image: url(/image/top-image.jpg);
+  background-image: url(https://kaiya415.github.io/myPortfolio/image/top-image.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -277,7 +277,7 @@ body {
 }
 
 .introduction {
-  background-image: url(/image/section1-bg.jpg);
+  background-image: url(https://kaiya415.github.io/myPortfolio/image/section1-bg.jpg);
 }
 
 .introduction .inner {
@@ -358,7 +358,7 @@ body {
 }
 
 .skills {
-  background-image: url(/image/section2-bg.jpg);
+  background-image: url(https://kaiya415.github.io/myPortfolio/image/section2-bg.jpg);
 }
 
 .skills .inner {
@@ -430,7 +430,7 @@ body {
 }
 
 .service {
-  background-image: url(/image/section3-bg.jpg);
+  background-image: url(https://kaiya415.github.io/myPortfolio/image/section3-bg.jpg);
 }
 
 .service .inner {
@@ -555,7 +555,7 @@ body {
 }
 
 .works {
-  background-image: url(/image/section4-bg.jpg);
+  background-image: url(https://kaiya415.github.io/myPortfolio/image/section4-bg.jpg);
 }
 
 .works .inner {
@@ -693,7 +693,7 @@ body {
 }
 
 .footer {
-  background-image: url(/image/footer-bg.jpg);
+  background-image: url(https://kaiya415.github.io/myPortfolio/image/footer-bg.jpg);
   padding-bottom: 10px;
 }
 
